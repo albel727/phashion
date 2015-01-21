@@ -40,7 +40,7 @@ Dir.chdir(HERE) do
     system("cp -f libpHash.a libpHash_gem.a")
     system("cp -f libpHash.la libpHash_gem.la")
   end
-  $LIBS = " -lpthread -lpHash_gem -lstdc++ -ljpeg -lpng"
+  $LIBS = " -lpHash_gem -lstdc++ -ljpeg -lpng -lpthread -lm"
 end
 
 have_header 'sqlite3ext.h'
